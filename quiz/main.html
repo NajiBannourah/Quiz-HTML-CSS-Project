@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quiz">
+    <title>HTML-CSS-Quiz-Project</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a accesskey="a" href="#student-info">INFO</a></li>
+                <li><a accesskey="b" href="#html-questions">HTML</a></li>
+                <li><a accesskey="c" href="#css-questions">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section aria-labelledby="student-info" role="region">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="name">Name:</label>
+                    <input placeholder="Your Full Name" id="name" name="name" type="text">
+                </div>
+
+                <div class="info">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email">
+                </div>
+
+                <div class="info">
+                    <label for="birth-date">D.O.B:<span class="sr-only">(Date of Birth)</span></label>
+                    <input id="birth-date" name="birth-date" type="date">
+                </div>
+            </section>
+
+
+            <section aria-labelledby="html-questions" role="region">
+                <h2 id="html-questions">HTML Questions</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset name="HTML-question" class="question">
+                        <legend>In HTML, the < header > element should only be used at the top of a page.</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input name="q1" value="True" id="q1-a1" type="radio">
+                                    True
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q1-a2">
+                                    <input name="q1" value="False" id="q1-a2" type="radio">
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset name="HTML-question-2" class="question">
+                        <legend>The < article > element in HTML should only be used for blog posts and articles, not for other types of content.</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input name="q2" value="True" id="q2-a1" type="radio">
+                                    True
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q2-a2">
+                                    <input name="q2" value="False" id="q2-a2" type="radio">
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+
+
+            <section aria-labelledby="css-questions" role="region">
+                <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="q1">What is the CSS box model, and how does it work? Describe the components of the box model and how they affect the layout and sizing of elements on a webpage.</label>
+                    </div>
+
+                    <div class="answer">
+                        <select required name="q1" id="q1">
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="question-block">
+                        <label for="q2">How can you center an element horizontally and vertically using CSS? Provide multiple methods and explain the pros and cons of each approach.</label>
+                    </div>
+
+                    <div class="answer">
+                        <textarea placeholder="Type your answer here" name="q2" id="q2" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            <a href="https://www.linkedin.com/in/naji-bannourah-75b9142a0/">Naji Bannourah</a><br />
+            Jerusalem<br />
+            Jerusalem<br />
+            IS.
+        </address>
+    </footer>
+</body>
+</html>
